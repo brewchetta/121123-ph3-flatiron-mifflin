@@ -45,9 +45,9 @@ When you see a '`#`', this means the functionality will be related to the instan
     * returns a `String` that is the department that the manager oversees
   * `Manager#age`
     * returns a `number` that is the age of the manager
-  * `Manager#employees`
+  * `Manager#get_employees`
     * returns an `list` of all the employee instances that the manager oversees
-  * `Manager.all`
+  * `Manager.all_managers`
     * returns an `list` of all the managers
   * `Manager#hire_employee`
     * takes a `String` argument and a `number` argument of an employee's name and the employee's salary, respectively, and adds that employee to the list of employees that the manager oversees
@@ -61,9 +61,9 @@ When you see a '`#`', this means the functionality will be related to the instan
     * returns a `String` that is the employee's name
   * `Employee#salary`
     * returns a `Number` that is the employee's salary
-  * `Employee#manager_name`
-    * returns a `String` that is the name of their manager
-  * `Employee.all`
+  * `Employee#manager`
+    * returns a `Manager` that is their manager
+  * `Employee.all_employees`
     * returns an `List` of all the employee instances
   * `Employee.paid_over`
     * takes a `Number` argument and returns an `List` of all the employee instances whose salaries are over that amount
